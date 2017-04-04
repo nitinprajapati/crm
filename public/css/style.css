@@ -1,0 +1,17 @@
+@CHARSET "ISO-8859-1";
+.top-100{
+	top: 100px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (min-width: 768px) {
+	.sidenavbar.nav {
+		float: none;
+	}
+	
+	.sidenavbar.nav > li {
+    	float: none;
+    	display:list-item;
+	}
+}
+
