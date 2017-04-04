@@ -13,10 +13,10 @@ http.use(express.static('public'))
 });
 */
 http.get("/registration", function (req, res){
-	res.sendFile("templates/registration.html",  { root: __dirname });
+	res.sendFile("registration.html",  { root: __dirname });
 });
 
 http.get("/", function (req, res){
-	res.sendFile("index.html",  { root: __dirname });
+	res.sendFile("login.html",  { root: __dirname });
 });
 
