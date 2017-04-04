@@ -1,0 +1,15 @@
+{
+  "name": "nitin",
+  "version": "1.0.0",
+  "description": "This is an erp for offices",
+  "main": "index.js",
+  "scripts": {
+    "test": "node start"
+  },
+  "author": "Nitin Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {}
+}
