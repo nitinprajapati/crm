@@ -4,6 +4,17 @@ const PORT = 12;
 
 http.listen(PORT, function () {
   console.log('Example app listening on port 12!')
+  var MongoClient = require('mongodb').MongoClient;
+
+//Connect to the db
+MongoClient.connect("mongodb://localhost:27017/exampleDb", function(err, db) {
+ if(!err) {
+   console.log("We are connected");
+ }
+ else{
+	 console.log(err);
+ }
+});
 })
 
 http.use(express.static('public'))
