@@ -5,6 +5,7 @@ myModule.controller('registration', ['$scope', '$http', function($scope, $http) 
 	  $scope.loginTemplate= './templates/loginTemplate.html';
 	  $scope.registrationTemplate = './templates/registration.html';
 	  $scope.leftNavigationTemplate = './templates/leftNavigation.html';
+	  $scope.activateUserTemplate = './templates/activateuser.html';
 	  $scope.status = "";
 	  
 	  $scope.registration	=	function (){
