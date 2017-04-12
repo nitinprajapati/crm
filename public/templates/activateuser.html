@@ -1,19 +1,30 @@
 <form id="registration_form">
 	<div class="row">
-		<div class="col-md-12 form-group" ng-class=""></div>
+		<div class="col-md-12 form-group" ng-class="$parent.resultClass">{{$parent.status}}	</div>
 	</div>
 	<div class="row">
 		<div class="col-md-6 form-group">
-		    <input type="text" class="form-control" data-ng-model="" placeholder="First Name" value="username"/>
+		    <input type="text" class="form-control" data-ng-model="$parent.first_name" placeholder="First Name" value="" />
 		</div>
 		<div class="col-md-6 form-group">
-		    <input type="text" class="form-control" data-ng-model="" placeholder="Last Name" />
+		    <input type="text" class="form-control" data-ng-model="$parent.last_name" placeholder="Last Name" />
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-6 form-group">
-		    <input type="text" class="form-control" data-ng-model="" placeholder="Email id" />
+		    <input type="text" class="form-control" data-ng-model="$parent.email_id" value="nitinkumar2593@gmail.com" />
+		</div>
+		<div class="col-md-6 form-group">
+		    <input type="text" class="form-control" data-ng-model="$parent.mob_no" placeholder="Mobile Number" />
 		</div>
 	</div>
-   <button type="button" class="btn btn-default" data-ng-click="">Register</button>
+ 	<div class="row">
+		<div class="col-md-6 form-group">
+		    <input type="password" class="form-control" data-ng-model="$parent.pass" placeholder="Password" />
+		</div>
+		<div class="col-md-6 form-group">
+		    <input type="password" class="form-control" data-ng-model="$parent.c_pass" placeholder="Confirm Password" />
+		</div>
+	</div>
+   <button type="button" class="btn btn-default" data-ng-click="activate_user()">Activate</button>
 </form>
